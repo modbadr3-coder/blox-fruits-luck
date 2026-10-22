@@ -1,0 +1,29 @@
+{
+    "version": "11.0",
+    "build": "2026.10.22",
+    "features": {
+        "luck_system": true,
+        "protection_system": true,
+        "ui_system": true,
+        "auto_activate": true,
+        "stealth_mode": true
+    },
+    "luck": {
+        "default_multiplier": 2.0,
+        "max_multiplier": 5.0,
+        "target_fruits": [
+            "Dragon", "Leopard", "Kitsune", "T-Rex", 
+            "Mammoth", "Yeti", "Gas", "Dough"
+        ]
+    },
+    "protection": {
+        "default_level": 8,
+        "max_level": 10,
+        "auto_clear_logs": true
+    },
+    "ui": {
+        "theme": "dark",
+        "toggle_key": "RightShift",
+        "draggable": true
+    }
+}
