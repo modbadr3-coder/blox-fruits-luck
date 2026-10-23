@@ -1,0 +1,51 @@
+{
+    "name": "BLOX FRUITS SUITE",
+    "version": "12.0.0",
+    "build": "2026.10.22",
+    "runtime": "Luau (Roblox client)",
+    "entry": "src/main.lua",
+    "single_file": "dist/BLOX_FRUITS_SUITE_v12.lua",
+    "loader": "loader.lua",
+    "modules": {
+        "core": "services, module lifecycle, settings, cleanup",
+        "data": "fruit, mob, island, npc and chest reference data",
+        "luck": "prng, rarity tables, roll engine, spawn and gacha trackers",
+        "world": "scanner, esp, movement, automation loops, fast travel",
+        "ui": "window, themes, widgets, seven pages"
+    },
+    "features": {
+        "fruit_esp": true,
+        "mob_esp": true,
+        "boss_esp": true,
+        "chest_esp": true,
+        "npc_esp": true,
+        "auto_farm": true,
+        "auto_collect": true,
+        "auto_quest": true,
+        "fast_travel": true,
+        "spawn_tracking": true,
+        "gacha_tracking": true,
+        "luck_engine": true,
+        "client_roll_hook": true,
+        "settings_persistence": true,
+        "themes": 5,
+        "accents": 8
+    },
+    "requires": {
+        "executor": "getgenv, game, loadstring",
+        "input": "keypress or VirtualInputManager (for the automation loops)",
+        "files": "writefile and readfile (for settings persistence)"
+    },
+    "data": {
+        "fruits": 42,
+        "rarity_tiers": 5,
+        "mobs": 72,
+        "bosses": 27,
+        "islands": 35
+    },
+    "tests": {
+        "syntax": "node tools/validate.js",
+        "runtime": "node tools/smoke.js",
+        "checks": 111
+    }
+}
